@@ -1,0 +1,30 @@
+GET HTTP://localhost:8080/api/cliente
+###
+
+GET HTTP://localhost:8080/api/cliente/2
+###
+
+POST HTTP://localhost:8080/api/cliente
+Content-Type: application/json
+
+{
+    "nome": "Juvenal",
+    "cpf": "14898768902",
+    "telefone": "24978098721",
+    "email": "juvenal@gmail.com"
+}
+###
+
+PUT HTTP://localhost:8080/api/cliente/2
+Content-Type: application/json
+
+{
+    "nome": "Maicon",
+    "cpf": "01927364527",
+    "telefone": "24908765432",
+    "email": "maicom@gmail.com"
+}
+###
+
+DELETE HTTP://localhost:8080/api/cliente/1
+###

@@ -1,0 +1,34 @@
+GET HTTP://localhost:8080/api/produto
+###
+
+GET HTTP://localhost:8080/api/produto/5
+###
+
+POST HTTP://localhost:8080/api/produto
+Content-Type: application/json
+
+{
+    "descricao": "TV-Roku",
+    "categoria": {
+        "id": 1
+    },
+    "valor": 100.0,
+    "observacao": "Imagem 4K"
+}
+###
+
+PUT HTTP://localhost:8080/api/produto/3
+Content-Type: application/json
+
+{
+    "descricao": "Motorola-G50",
+    "categoria": {
+        "id": 2
+    },
+    "valor": 80.0,
+    "observacao": "Ótimo para jogar"
+}
+###
+
+DELETE HTTP://localhost:8080/api/produto/4
+###

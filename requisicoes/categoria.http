@@ -1,0 +1,24 @@
+GET HTTP://localhost:8080/api/categorias
+###
+
+GET HTTP://localhost:8080/api/categorias/1
+###
+
+POST HTTP://localhost:8080/api/categorias
+Content-Type: application/json
+
+{
+    "descricao": "Notebook"
+}
+###
+
+PUT HTTP://localhost:8080/api/categorias/2
+Content-Type: application/json
+
+{
+    "descricao": "Geladeira"
+}
+###
+
+DELETE HTTP://localhost:8080/api/categorias/3
+###

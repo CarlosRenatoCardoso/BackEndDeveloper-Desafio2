@@ -1,0 +1,39 @@
+GET HTTP://localhost:8080/api/endereco
+###
+
+GET HTTP://localhost:8080/api/endereco/1
+###
+
+POST HTTP://localhost:8080/api/endereco
+Content-Type: application/json
+
+{
+    "cep": "27600000",
+    "rua": "Travessa Sebastião José de Freitas",
+    "numero": "674",
+    "bairro": "Hildebrando Lopes",
+    "complemento": "CA 11",
+    "cidade": "Valença",
+    "estado": "Rio de Janeiro",
+    "cliente": {
+        "id": 1
+    }
+}
+###
+
+PUT HTTP://localhost:8080/api/endereco/2
+Content-Type: application/json
+
+{
+     "cep": "27600000",
+    "rua": "Nilo Peçanha",
+    "numero": "125",
+    "bairro": "Centro",
+    "complemento": "CA 32",
+    "cidade": "Valença",
+    "estado": "Rio de Janeiro"
+}
+###
+
+DELETE HTTP://localhost:8080/api/endereco/1
+###
